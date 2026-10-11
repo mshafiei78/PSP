@@ -1,0 +1,26 @@
+Option 1: Hide all built-in AI features (Recommended)
+
+Open Settings and search for: chat.disableAIFeatures Enable it, 
+
+or add this to settings.json:
+{
+    "chat.disableAIFeatures": true
+}
+
+Option 2: Remove Copilot Extensions
+
+Open Extensions (Ctrl+Shift+X):
+
+Uninstall GitHub Copilot
+Uninstall GitHub Copilot Chat
+
+This completely removes Copilot from VS Code.
+
+Option 3: Disable AI Suggestions Only
+
+Add to settings.json:
+{
+    "github.copilot.enable": {
+        "*": false
+    }
+}
